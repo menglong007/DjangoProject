@@ -1,0 +1,25 @@
+{% extends 'school/base.html' %}
+
+{% block content %}
+<div class="relative overflow-hidden bg-white rounded-2xl shadow-xl">
+    <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+            <div class="sm:max-w-lg">
+                <h1 class="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Welcome to School MS</h1>
+                <p class="mt-4 text-xl text-gray-500">Manage your students, teachers, and courses efficiently with our
+                    modern management system.</p>
+            </div>
+            <div class="mt-10">
+                <div class="flex gap-4">
+                    <a href="{% url 'student_list' %}"
+                        class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700">Manage
+                        Students</a>
+                    <a href="{% url 'teacher_list' %}"
+                        class="inline-block rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-center font-medium text-indigo-700 hover:bg-indigo-200">Manage
+                        Teachers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
